@@ -1,3 +1,3 @@
-ultraviolet under gpl 3.0 or later includes{index.js i think and possibly index.js in static all files in the uv folder and sw.js i think}
-luminite code is under idk but most code in static is luminite besides some of ours
-our code is under 
+This project is modified off Ultraviolet and Luminite changes can be found in changes.txt
+Ultraviolet’s license can be found in Uvlicense.txt <AGPL-3.0> (Credit to Ultraviolet) https://github.com/titaniumnetwork-dev/Ultraviolet
+Luminite’s license can be found in Lnlicense.txt <GPL-3.0-or-later> (Credit to Lunadox) https://github.com/Lunadox-Dev/Luminite

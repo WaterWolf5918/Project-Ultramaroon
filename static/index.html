@@ -13,7 +13,7 @@
     
 </head>
 <body>
-    <div id="settingsWindow">
+    <div id="settingsWindow" class="hidden">
       <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
       <div id="settingsWindowHeader">Settings</div>
         <h2>DIV Centering Simulator</h2>
@@ -40,7 +40,7 @@
                 <img src="assets/ultramaroon.ico" width="40" height="40">
             </button>
         </a>
-        <a href="./settings.html">
+        <a onclick="handleSettings()">
             <button>
                 <img src="assets/settings.png" width="40" height="40">
             </button>
