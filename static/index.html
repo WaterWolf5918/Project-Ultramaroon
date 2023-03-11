@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
     <title>Ultramaroon Proxy</title>
@@ -10,15 +11,23 @@
     <link rel="stylesheet" href="./styles/set.css">
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="icon" type="image/x-icon" href="assets/ultramaroon.ico">
-    
+    <link rel="stylesheet" id="cssOverrides" href="style.css">
 </head>
 <body>
-    <div id="settingsWindow" class="hidden">
+    <div id="settingsWindow" class="hidden" style="height: 325px; width: 300px;">
       <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
-      <div id="settingsWindowHeader">Settings</div>
-        <h2>DIV Centering Simulator</h2>
-        <p>Center This DIV</p>
-      <button id="closeButton">Close</button>
+      <div id="settingsWindowheader">Settings</div>
+      <p id="theme_text" >Theme the app will use</p>
+            <form>
+                <select id="theme" name="theme">
+                    <option value="default">Default</option>
+                    <option value="neondark">idk</option>
+                    <option value="flatlight">idk</option>
+                    <option value="neonlight">idk</option>
+                </select>
+            </form>
+            <br/>
+      <button id="closeButton" onclick="handleSettingsClose()">Done</button>
     </div>    
     <div class="search">
         <h1>Ultramaroon Proxy</h1>

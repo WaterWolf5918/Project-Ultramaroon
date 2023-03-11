@@ -1,4 +1,4 @@
-
+const store = window.localStorage
 dragElement(document.getElementById("settingsWindow"));
 function dragElement(elmnt) {
   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
@@ -42,6 +42,42 @@ function dragElement(elmnt) {
 }
 
 
+
+function changeTheme(cssFile){
+  var head = document.getElementsByTagName("head")[0]
+  var theme = document.getElementById("cssOverrides")
+  theme.href = cssFile
+}
+
+
+function loadDefTheme(){
+  const item = window.localStorage.getItem("theme")
+  console.log(item)    
+  if (item == null){
+      console.log("No theme detected using default")
+      store.setItem("theme","default")
+      return
+  }
+  changeTheme(`./themes/${themeLookup[store.getItem("theme")]}.css`)
+}
+
+
+function loadTheme(theme){
+  store.setItem("theme",theme)
+  changeTheme(`./themes/${themeLookup[store.getItem("theme")]}.css`)
+}
+
+
+function clearDefTheme(){
+  store.setItem("theme","neondark")
+  changeTheme(`./themes/${themeLookup[store.getItem("theme")]}.css`,store.getItem("theme"))
+}
+
 function handleSettings(){
   document.getElementById("settingsWindow").classList.toggle('hidden')
+};
+
+function handleSettingsClose(){
+  document.getElementById("settingsWindow").classList.toggle('hidden')
+  //add logic to change theme
 };

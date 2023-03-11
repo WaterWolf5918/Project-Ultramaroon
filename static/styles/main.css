@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 
 body {
@@ -8,6 +9,7 @@ body {
     -o-background-size: cover;
     background-size: cover;
 }
+
 .search {
     position: absolute;
     left: 50%;
