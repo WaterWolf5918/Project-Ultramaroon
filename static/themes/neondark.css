@@ -1,0 +1,12 @@
+body {
+    /* background-image: none !important;
+    background-color: #111927; */
+    background-image: 
+        radial-gradient(at 47% 33%, hsl(280.19, 61%, 47%) 0, transparent 59%), 
+        radial-gradient(at 82% 65%, hsl(217.73, 100%, 38%) 0, transparent 55%) !important;
+    background-image: linear-gradient();
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
